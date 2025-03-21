@@ -8,6 +8,8 @@
 
 > A markdown-it plugin to render inline math that feels like markdown.
 
+Pairs well with [markdown-it-mathblock][markdown-it-mathblock].
+
 This is a markdown-it plugin which renders inline math (delimited by
 `$`) with the same behavior as [backticks][commonmark#code-spans] (`` ` ``)
 according to the commonmark spec.
@@ -238,8 +240,8 @@ $pi ~~ 3,14159$.
 
 [commonmark#code-spans]: https://spec.commonmark.org/0.31.2/#code-spans
 [custom-element-registry]: https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry
-[markdown-it-math]: https://github.com/runarberg/math
-[markdown-it-mathblock]: https://github.com/runarberg/mathblock
+[markdown-it-math]: https://github.com/runarberg/markdown-it-math
+[markdown-it-mathblock]: https://github.com/runarberg/markdown-it-mathblock
 [mathup]: https://mathup.xyz/
 [temml]: https://temml.org/
 [temml-custom-element]: https://github.com/runarberg/temml-custom-element
