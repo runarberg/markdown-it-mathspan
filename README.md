@@ -1,5 +1,11 @@
 # markdown-it-mathspan
 
+[![ci](https://github.com/runarberg/markdown-it-mathspan/actions/workflows/ci.yml/badge.svg)](https://github.com/runarberg/markdown-it-mathspan/actions/workflows/ci.yml)
+![Coverage](https://runarberg.github.io/markdown-it-mathspan/badge.svg)
+[![npm](https://img.shields.io/npm/v/markdown-it-mathspan.svg)](https://www.npmjs.com/package/markdown-it-mathspan)
+[![License](https://img.shields.io/npm/l/markdown-it-mathspan)](https://github.com/runarberg/markdown-it-mathspan/blob/main/LICENSE)
+[![Downloads](https://img.shields.io/npm/dm/markdown-it-mathspan)](https://npm-stat.com/charts.html?package=markdown-it-mathspan)
+
 > A markdown-it plugin to render inline math that feels like markdown.
 
 This is a markdown-it plugin which renders inline math (delimited by
@@ -85,11 +91,11 @@ import "temml-custom-element";
 md.render(`
 # Document
 
-With inline math $e^{\cos\theta i\sin\theta}$.
+With inline math $e^{i\theta} = \cos\theta + i\sin\theta$.
 `);
 // <h1>Document</h1>
 // <p>
-//   With inline math <la-tex>e^{\cos\theta i\sin\theta}</la-tex>.
+//   With inline math <la-tex>e^{i\theta} = \cos\theta + i\sin\theta</la-tex>.
 // </p>
 ```
 
@@ -161,11 +167,11 @@ import "mathup/custom-element";
 
 const md = markdownIt().use(markdownItMath, { minDelims: 2 });
 
-md.render(
+md.render(`
 $This is not math$
 
 $$[b, u, t] * t[h, i, s] = i_s$$
-);
+`);
 ```
 
 Render the expression straight into MathML using [mathup][mathup]. You
